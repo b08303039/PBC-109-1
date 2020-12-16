@@ -29,7 +29,7 @@ class Page1(tk.Frame):
         self.hit = tk.Label(self, text='(你可以不輸入角色名稱看看)', font=('KaiTi', 20)).pack()
         self.var_usr_name = tk.StringVar()
         self.entry_usr_name = tk.Entry(self, textvariable=self.var_usr_name, font=('KaiTi', 20)).pack(pady=10)
-        self.btn_login = tk.Button(self, text='登入', bg='#A877BA', font=('KaiTi', 20), command=self.usr_login)
+        self.btn_login = tk.Button(self, text='登入', bg='#ffcc69', font=('KaiTi', 20), command=self.usr_login)
         self.btn_login.pack(padx=10, pady=10)
 
 page1 =Page1()
