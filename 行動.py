@@ -5,7 +5,7 @@ from functools import partial
 import threading
 
 
-class Game(tk.Frame):
+class Action(tk.Frame):
     def __init__(self):
         tk.Frame.__init__(self)
         self.grid()
@@ -65,6 +65,6 @@ class Game(tk.Frame):
             self.cantrigger = True
             self.text.set('')
 
-cal = Game()
-cal.master.title("Game")
+cal = Action()
+cal.master.title("Action")
 cal.mainloop()
