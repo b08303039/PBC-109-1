@@ -62,6 +62,7 @@ class Game(tk.Frame):
             t.start()
         else:
             self.cantrigger = True
+            self.text.set('')
 
 cal = Game()
 cal.master.title("Game")
