@@ -39,6 +39,7 @@ class Game(tk.Frame):
         self.title = tk.Label(self, text = "行動", height = 1, width = 10, bg = 'white', font = f1).place(x = 600 , y = 25)
         # CD
         self.text = tk.StringVar()
+        self.text.set(str(cdnum))
         self.cd = tk.Label(self, text = "冷卻時間:", height = 1, width = 10, bg = 'white', font = f2).place(x = 200 , y = 32)
         self.cdnumber = tk.Label(self, textvariable=self.text, height = 1, width = 2, bg = 'white', font = f2, fg="red")
         self.cdnumber.place(x = 390 , y = 32)
